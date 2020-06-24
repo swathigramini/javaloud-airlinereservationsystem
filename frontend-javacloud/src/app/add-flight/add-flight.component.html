@@ -1,0 +1,101 @@
+<div id="content-wrapper" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="https://images.pexels.com/photos/46148/aircraft-jet-landing-cloud-46148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="d-block w-100" height="600" width="600">
+    </div>
+    <div class="carousel-item">
+      <img src="https://wallpapercave.com/wp/HhbDh9i.jpg" class="d-block w-100" height="600" width="1200">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/originals/09/ce/40/09ce4041aeabe08f2223921ba2163ccf.jpg" class="d-block w-100" height="600" width="600">
+    </div>
+  </div>
+</div>
+<div id="content-wrapper">
+  <div class="container">
+    <div class="page-header"></div>
+    <div class="well">
+  <div class="bg">
+  <div class="col-md-4 offset-4 card card-body mt-5">
+    <h4 class="text-center">Add-Flights</h4>
+    <form #form="ngForm" #flightRegisterForm="ngForm" (ngSubmit)="getFlightRegisterData()">
+      
+        <div class="form-group">
+            <label for="flightName">Choose flight...</label>
+            <select ngModel class="form-control" name="flightName" id="flightName">
+              <option value="AirIndia">AirIndia</option>
+              <option value="Boeing">Boeing</option>
+              <option value="Emirates">Emirates</option>
+              <option value="Deccan">Deccan</option>
+              <option value="Indigo">Indigo</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+          <label for="source">Choose source...</label>
+          <select ngModel class="form-control" name="source" id="source">
+              <option value="Bengaluru">Bengaluru</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="chennai">chennai</option>
+              <option value="Delhi">Delhi</option>
+          </select>
+        </div>
+  
+        <div class="form-group">
+          <label for="destination">Choose destination...</label>
+            <select ngModel class="form-control" name="destination" id="destination">
+              <option value="Dubai">Dubai</option>
+              <option value="Israel">Israel</option>
+              <option value="Bhutan">Bhutan</option>
+              <option value="Srilanka">Srilanka</option>
+              <option value="Delhi">Delhi</option>
+            </select>
+          </div>
+  
+          <div class="form-group">
+            <label for="departureDate">Enter departureDate </label>
+            <input type="date" ngModel class="form-control" name="departureDate" id="departureDate" aria-describedby="helpId"
+                placeholder="Enter departureDate..." >
+          </div>
+  
+          <div class="form-group">
+            <label for="departureTime">Enter departureTime </label>
+            <input type="time" ngModel class="form-control" name="departureTime" id="departureTime" aria-describedby="helpId"
+              placeholder="Enter departureTime..." >
+          </div>
+  
+      <div class="form-group">
+        <label for="classType">Choose Class</label>
+        <select ngModel class="form-control" name="classType" id="classType">
+          <option value="Domestic">Domestic</option>
+          <option value="Business">Business</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="ticketPrice">Enter Ticket price<i class="fa fa-user-circle-o" aria-hidden="true"></i></label>
+        <input type="number" ngModel class="form-control" name="double" id="double"
+        #double='ngModel' ngModel class="form-control" placeholder="Enter Ticket price...">
+      </div>
+  
+      <div class="form-group">
+          <label for="totalSeats">Enter total number of seats</label>
+          <input type="number" ngModel class="form-control" name="totalSeats" id="totalSeats" aria-describedby="helpId"
+              placeholder="Enter total number of seats...">
+      </div>
+  
+      <div class="form-group">
+        <label for="isActive">Choose isActive...</label>
+        <select ngModel class="form-control" name="isActive" id="isActive">
+          <option value="true">true</option>
+          <option value="false">false</option>
+        </select>
+      </div>
+        <div>
+            <button type="submit" class="btn btn-outline-primary">Add Flight</button>
+        </div>
+    </form>
+  </div>
+  </div>
+

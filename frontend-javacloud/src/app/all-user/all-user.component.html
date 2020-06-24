@@ -1,0 +1,46 @@
+<div id="content-wrapper" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="https://all4desktop.com/data_images/1920%20x%201080/4143043-flight-takeoff.jpg" class="d-block w-100" height="600" width="600">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.pexels.com/photos/46148/aircraft-jet-landing-cloud-46148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="d-block w-100" height="600" width="600">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.evaair.com/Images/enus/EVA_787-9_Shot_06_Still-1920x1080_tcm35-58292.jpg" class="d-block w-100" height="600" width="600">
+      </div>
+    </div>
+  </div>
+
+<div id="content-wrapper">
+    <div class="container">
+        <div class="page-header"></div>
+        <div class="well">
+                &nbsp;
+          <input type="text" class="form-control mr-sm-2" placeholder="UserName"  #myInput [(ngModel)] ="userName" (input)="UserName()"/>
+                &nbsp;
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">UserName</th>
+                <th scope="col">EmailId</th>
+                <th scope="col">Role</th>
+                <th scope="col">Nationality</th>
+                <th scope="col">Address</th>
+                <th scope="col">MobileNo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor='let h of users'>
+                <td>{{h.userName}}</td>
+                <td>{{h.emailId}}</td>
+                <td>{{h.role}}</td>
+                <td>{{h.nationality}}</td>
+                <td>{{h.address}}</td>
+                <td>{{h.mobile}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- End Well -->
+    </div><!-- End Container -->
+</div>

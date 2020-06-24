@@ -1,0 +1,46 @@
+<div id="content-wrapper" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="https://images.pexels.com/photos/46148/aircraft-jet-landing-cloud-46148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="d-block w-100" height="600" width="600">
+    </div>
+    <div class="carousel-item">
+      <img src="https://wallpapercave.com/wp/HhbDh9i.jpg" class="d-block w-100" height="600" width="600">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/originals/09/ce/40/09ce4041aeabe08f2223921ba2163ccf.jpg" class="d-block w-100" height="600" width="600">
+    </div>
+  </div>
+</div>
+
+<div id="content-wrapper">
+  <div class="container">
+      <div class="page-header"></div>
+      <div class="well">
+              &nbsp;
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">UserId</th>
+              <th scope="col">FlightId</th>
+              <th scope="col">JourneyDate</th>
+              <th scope="col">JourneyTime</th>
+              <th scope="col">Destination</th>
+              <th scope="col">Source</th>
+              <th scope="col">NoOfSeats</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ticketDetails.userId}}</td>
+              <td>{{ticketDetails.flightId}}</td>
+              <td>{{ticketDetails.journeyDate}}</td>
+              <td>{{ticketDetails.journeyTime}}</td>
+              <td>{{ticketDetails.destination}}</td>
+              <td>{{ticketDetails.source}}</td>
+              <td>{{ticketDetails.numOfSeats}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- End Well -->
+  </div><!-- End Container -->
+</div>

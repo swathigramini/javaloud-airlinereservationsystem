@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table col-10 offset-1 mt-5">
+        <thead class="thead-white">
+            <tr>
+                <th scope="col">Flight Id</th>
+                <th scope="col">Flight Name</th>
+                <th scope="col">Source</th>
+                <th scope="col">Destination</th>
+                <th scope="col">departure Date</th>
+                <th scope="col">departure Time</th>
+                <th scope="col">Class Type</th>
+                <th scope="col">Total Seats</th>
+                <th scope="col">Ticket Price</th>
+                <th scope="col">Is Active</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let flight of flights">
+                <th scope="row" #flightId>{{flight.flightId}}</th>
+                <td>{{flight.flightName}}</td>
+                <td>{{flight.flightSource}}</td>
+                <td>{{flight.flightDestination}}</td>
+                <td>{{flight.flightDepartureDate}}</td>
+                <td>{{flight.flightDepartureTime}}</td>
+                <td>{{flight.flightClassType}}</td>
+                <td>{{flight.flightTotalSeats}}</td>
+                <td>{{flight.flightTicketPrice}}</td>
+                <td>{{flight.flightIsActive}}</td>
+                <td><button type="button" class="btn btn-outline-dark" (click)="getFlightId(flightId)">
+                Book
+                </button></td>
+                <td><button type="button" class="btn btn-outline-dark" (click)="getFlightId(flightId)">
+                update
+                </button></td>
+                <td><button type="button" class="btn btn-outline-dark" (click)="getFlightId(flightId)">
+                Delete
+                </button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
